@@ -1,20 +1,17 @@
 {
-  "name": "furniture-website",
+  "name": "fruit-ecommerce",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "install-all": "npm install --prefix frontend && npm install --prefix backend",
-    "start": "concurrently \"npm run dev --prefix frontend\" \"npm run dev --prefix backend\""
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm run dev",
+    "start:all": "concurrently \"npm run start:backend\" \"npm run start:frontend\""
   },
   "devDependencies": {
-    "concurrently": "^8.2.2"
+    "concurrently": "^9.2.1"
   },
   "dependencies": {
-    "nodejs": "^0.0.0"
+    "axios": "^1.12.2",
+    "react-router-dom": "^7.9.3",
+    "vite": "^7.1.9"
   }
 }
