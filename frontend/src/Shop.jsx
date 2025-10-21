@@ -10,10 +10,10 @@ function Shop() {
 
   // Fetch paginated products whenever currentPage or limit changes
   useEffect(() => {
-        axios.get(`https://dummyjson.com/products`).then((response) => {
+        axios.get(`http://localhost:5000/products`).then((response) => {
             setProducts(response.data.products)
         }).catch((error) => {
-          console.error('Error Fetch Products', error)
+          console.error(error)
         })
     }, [])
 
