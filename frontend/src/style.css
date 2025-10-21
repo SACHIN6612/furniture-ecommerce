@@ -1,5 +1,5 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   margin: 0;
@@ -171,36 +171,9 @@ h3 {
   background: #555;
 }
 
-.pagination {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin: 20px 0;
-}
-
-.pagination button {
-  padding: 8px 14px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  background: #fff;
-  cursor: pointer;
-}
-
-.pagination button.active {
-  background: #2d3436;
-  color: #fff;
-  border-color: #2d3436;
-}
-
-.pagination button:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-
 .shop-details-container {
-  max-width: 900px;
-  margin: 125px 0 0 90px;
+  width: 80%;
+  margin: 125px;
   display: flex;
   flex-wrap: wrap;
   background: #fff;
@@ -360,7 +333,7 @@ h3 {
   max-width: 800px;
   margin: 2rem auto;
   padding: 1rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .reviews h2 {
@@ -427,13 +400,13 @@ h3 {
 .contact {
   margin: 90px 100px 90px 100px;
   padding: 20px 20px 20px 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-section {
   padding: 80px 20px;
   background-color: #f5f5f5;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   text-align: center;
 }
 
@@ -666,7 +639,7 @@ hr {
   max-width: 1200px;
   margin: 100px auto;
   padding: 0 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .checkout-container h2 {
@@ -824,7 +797,7 @@ p.text-placed {
 
 h3.order-table {
   margin-top: 40px;
-  margin-bottom: 20PX;
+  margin-bottom: 20px;
 }
 
 .table {

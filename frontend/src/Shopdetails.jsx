@@ -22,18 +22,6 @@ function Shopdetails() {
 
     }, [])
 
-    const formatDate = (reviewdate) => {
-        const date = new Date(reviewdate);
-
-        reviewdate = date.toLocaleString('en-IN', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
-        });
-
-        return reviewdate;
-    }
-
     const increase = () => {
         if (quantity < product.stock) {
             let qty = quantity;
@@ -131,38 +119,6 @@ function Shopdetails() {
                 </div>
             </div>
 
-            <section className="reviews">
-                <h2>Customer Reviews</h2>
-
-                {/* {(product != '') ? product.map((review) => (
-
-                    <div className="review-card">
-                        <img src="https://i.pravatar.cc/80?img=1" alt="User photo" />
-                        <div className="review-content">
-                            <p className="dateset">
-                                {formatDate(review.date)}
-                            </p>
-                            <h4>{review.reviewerName}</h4>
-                            <div className="d-flex left-rating">
-                                {[1, 2, 3, 4, 5].map((star) => (
-                                    <i
-                                        key={star}
-                                        className={
-                                            prod.rating >= star
-                                                ? "fa fa-star text-warning me-1"
-                                                : "fa fa-star text-secondary me-1"
-                                        }
-                                    ></i>
-                                ))}
-                            </div>
-                            <p>{review.comment}</p>
-                            <p>{review.reviewerEmail}</p>
-                        </div>
-                    </div>
-
-                )) : ""} */}
-
-            </section>
             <Footer />
         </>
 
