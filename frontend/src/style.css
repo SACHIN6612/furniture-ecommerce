@@ -172,7 +172,7 @@ h3 {
 }
 
 .shop-details-container {
-  width: 80%;
+  width: 73%;
   margin: 125px;
   display: flex;
   flex-wrap: wrap;
@@ -194,7 +194,7 @@ h3 {
 .product-info h2 {
   margin-top: 0;
   color: #333;
-  font-size: 60px;
+  font-size: 45px;
 }
 
 .text-warning {
@@ -399,7 +399,7 @@ h3 {
 /* Container styling */
 
 .contact {
-    margin: 120px;
+  margin: 120px;
 }
 
 .contact-form input,

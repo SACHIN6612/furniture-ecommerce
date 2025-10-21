@@ -23,7 +23,7 @@ function Contact() {
 
   // Validate Inputs
   const validate = () => {
-    const newErrors = {};
+    const newErrors = [];
     if (!formData.name.trim()) {
       newErrors.name = "Name is required";
     }
