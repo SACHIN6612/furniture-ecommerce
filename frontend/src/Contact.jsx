@@ -15,7 +15,10 @@ function Contact() {
   // Handle Input Change
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData({
+        ...formData,
+        [name]: value
+    });
   };
 
   // Validate Inputs
@@ -46,7 +49,11 @@ function Contact() {
       setSubmitted(true);
 
       // Reset form
-      setFormData({ name: "", email: "", message: "" });
+      setFormData({
+        name: "",
+        email: "",
+        message: ""
+    });
 
       // Hide message after 3 seconds
       setTimeout(() => setSubmitted(false), 3000);
