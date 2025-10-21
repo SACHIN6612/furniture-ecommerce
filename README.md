@@ -44,7 +44,7 @@ git clone https://github.com/SACHIN6612/furniture-ecommerce.git
 
 cd furniture-ecommerce
 
-npm run start:all(Frontend + Backend Both)
+npm run start:all                                               (Frontend + Backend Both)
 
 Open in browser:
-http://localhost:5173       (Started the Frontend And Backend Both)
+http://localhost:5173                                           (Started the Frontend And Backend Both)
