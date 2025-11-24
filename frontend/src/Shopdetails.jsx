@@ -14,7 +14,7 @@ function Shopdetails() {
 
     useEffect(() => {
 
-        axios.get(`http://localhost:5000/products/${params.id}`).then((response) => {
+        axios.get(`https://dummyjson.com/products/${params.id}`).then((response) => {
             setProduct(response.data)
         }).catch((error) => {
             console.log(error);
@@ -74,7 +74,7 @@ function Shopdetails() {
             <Header />
             <div className="shop-details-container">
                 <div className="product-image">
-                    <img src={product.thumbnail_image} alt="Product Image" />
+                    <img src={product.thumbnail} alt="Product Image" />
                 </div>
                 <div className="product-info">
                     <h2>{product.name}</h2>

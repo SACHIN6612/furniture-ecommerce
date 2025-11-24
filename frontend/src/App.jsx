@@ -15,9 +15,9 @@ function App() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/all-products`)
+      .get(`https://dummyjson.com/products/category/furniture`)
       .then((response) => {
-        setProducts(response.data);
+        setProducts(response.data.products);
       })
       .catch((error) => {});
   }, []);
@@ -124,7 +124,7 @@ function App() {
           {products
             ? products.map((prod) => (
                 <div className="box">
-                  <img src={prod.thumbnail_image} alt="Gray Chair" />
+                  <img src={prod.thumbnail} alt="Gray Chair" />
                   <div className="title-price">
                     <h3>{prod.name}</h3>
                     <p className="description">{prod.description}</p>
@@ -201,7 +201,7 @@ function App() {
           {products
             ? products.map((prod) => (
                 <div className="box">
-                  <img src={prod.thumbnail_image} alt="Gray Chair" />
+                  <img src={prod.thumbnail} alt="Gray Chair" />
                   <div className="title-price">
                     <h3>{prod.name}</h3>
                     <p className="description">{prod.description}</p>
