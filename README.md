@@ -27,16 +27,34 @@ A modern, responsive **furniture e-commerce web application** built with **React
 
 ## 📁 Project Structure
 
-fruit-ecommerce/
+furniture-ecommerce/
+├── backend/
+│ └── server.js
 │
-├─ public/ # Static assets (images, favicon)
-├─ src/
-│ ├─ components/ # Reusable React components
-│ ├─ pages/ # App pages
-│ ├─ App.jsx # Main React component
-│ └─ main.jsx # Entry point
-├─ package.json # Project metadata & scripts
-└─ README.md # Documentation
+├── frontend/
+│ ├── public/
+│ │ ├── images
+│ ├── src/
+│ │ ├── About.jsx
+│ │ ├── Contact.jsx
+│ │ ├── Thankyoupage.jsx
+│ │ ├── Header.jsx
+│ │ ├── Footer.jsx
+│ │ ├── Hero.jsx
+│ │ ├── Shop.jsx
+│ │ ├── ShopDetails.jsx
+│ │ ├── Cart.jsx
+│ │ ├── Checkout.jsx
+│ │ ├── App.jsx
+│ │ ├── main.jsx
+│ │ ├── style.css
+│ ├── package.json
+│ └── vite.config.js
+│
+├── .gitignore
+├── package.json
+└── README.md
+
 
 ⚡ Installation & Setup
 
@@ -48,3 +66,5 @@ npm run start:all                                               (Frontend + Back
 
 Open in browser:
 http://localhost:5173                                           (Started the Frontend And Backend Both)
+
+Live Demo Link : https://furniture-ecommerce-luwr.vercel.app/
